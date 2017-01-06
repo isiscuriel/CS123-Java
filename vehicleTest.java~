@@ -1,0 +1,8 @@
+public class vehicleTest{
+public static void main (String [] args){
+  
+Truck truck1 = new Truck("Dodge",4,"Joe" ,40,20);
+truck1.getCylinders();
+truck1.setCylinders(6);
+ }
+   }

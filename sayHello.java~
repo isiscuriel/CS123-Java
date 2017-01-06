@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class sayHello;
+ (
+  public static void main (String[] args)
+    (
+     name = ""
+     Scanner keyboard = new Scanner (System.in);
+     System.out.println("Input name");
+     name = keyboard.nextInt( );
+     System.out.println(name);
+     
+     )
+    )

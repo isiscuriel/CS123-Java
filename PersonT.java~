@@ -1,0 +1,134 @@
+public class PersonT {
+
+    private String name;
+
+    public Person()
+    {
+        name = "No Name Yet";
+    }
+    public Person(String initialName)
+    {
+        name = initialName;
+    }
+    public void setName(String newName)
+    {
+        newName = "tim";
+        name = newName;
+    }
+    public String getName()
+    {
+        return name;
+    }
+    public void writeOutput()
+    {
+        System.out.println("name: " + name);
+    }
+    public boolean hasSameName(Person otherPerson)
+    {
+        return this.name.equalsIgnoreCase(otherPerson.name);
+    }
+
+}
+public class VehicleT extends PersonT {
+
+    String manufactName;
+    int engine;
+
+
+
+    public VehicleT()
+    {
+        manufactName = "no name yet";
+        engine = 0;
+    }
+    public VehicleT(String initialManufactName, int initialEngine)
+    {
+        manufactName = initialManufactName;
+        engine = initialEngine;
+    }
+    public void setManufactName(String newManufactName)
+    {
+        manufactName = newManufactName;
+    }
+    public void setEngine(int newEngine)
+    {
+
+        engine = newEngine;
+    }
+    public String getManufactName()
+    {
+
+        return manufactName;
+    }
+    public double getEngine()
+    {
+        return engine;
+    }
+    public void writeOutput()
+    {
+        super.writeOutput();
+        System.out.println("Manufacturer: " + manufactName);
+        System.out.println("Engine Cyclinders: " + engine);
+    }
+    public boolean hasSameManufactName(Vehicle otherVehicle)
+    {
+        return this.manufactName.equalsIgnoreCase(otherVehicle.manufactName);
+    }
+    public boolean hasSameEngine(Vehicle otherVehicle)
+    {
+        return this.engine == (otherVehicle.engine);
+    }
+}
+
+public class Truck extends Vehicle {
+
+    private double load;
+    private double towing;
+
+    public Truck()
+    {
+        load = 0;
+        towing = 0;
+    }
+    public Truck(double initialLoad, double initialTowing)
+    {
+        load = initialLoad;
+        towing = initialTowing;
+    }
+    public void setLoad(double newLoad)
+    {
+        load = newLoad;
+    }
+    public void setTowing(double newTowing)
+    {
+        towing = newTowing;
+    }
+    public double getLoad()
+    {
+        return load;
+    }
+    public double getTowing()
+    {
+        return towing;
+    }
+    public void writeOutput()
+    {
+        super.writeOutput();
+        System.out.println("Load: " + load);
+        System.out.println("Towing: " + towing);
+    }
+    public boolean hasSameLoad(Truck otherTruck)
+    {
+        return this.load == (otherTruck.load);
+    }
+    public boolean hasSameTowing(Truck otherTruck)
+    {
+        return this.towing == (otherTruck.towing);
+    }
+}
+
+public class Driver extends Truck{
+ Truck t = new Truck();
+ t.setName("tim");
+ t.writeOutput();
+    }

@@ -1,0 +1,24 @@
+public class vehicle  {
+private String mName;
+private int cylinders;
+private Person owner = new Person();
+public vehicle (String m, int c, Person owner){
+this.mName = m;
+this.cylinders = c;
+this.owner = owner;
+}
+public void setCylinders (int x) {
+this.cylinders=x; 
+}
+public int getCylinders(){
+return cylinders;
+}
+/*
+public boolean equals {
+
+
+}
+*/
+}
+
+

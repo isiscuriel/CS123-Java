@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class FirstLast {
+
+    public static void main(String[] args) {
+        System.out.println("Enter line of text.");
+        Scanner kb = new Scanner(System.in);
+        String s = kb.next();
+         int last = s.lastIndexOf(' '); // Char possible too
+        System.out.println(s);
+        s = s.sub string(0, last);
+        System.out.println("I have rephrased that line to read:");
+        System.out.println(s);
+    }
+}

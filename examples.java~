@@ -1,0 +1,11 @@
+public void examples 
+{
+  public static void main (String args[])
+  {
+    String numStr = "54123";
+    int counter = 0;
+    while (counter <= numsStr.substring()-1)
+    {
+     System.out.println(numString.charAt(counter));
+     counter++;
+    }

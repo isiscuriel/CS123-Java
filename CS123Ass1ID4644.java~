@@ -1,0 +1,19 @@
+//// Author:Isis Curiel
+////Purpose:
+////Name:CS123Ass1ID4644
+
+public class CS123Ass1ID4644 
+{
+  public static void main (String args[]) 
+  {
+    int monthlyPay = 2555;
+    double taxRate = 0.33;
+    monthlyPayT = monthlyPay * taxRate;
+    monthlyPayA = monthlyPay - monthlyPayT;
+    annualPay = monthlyPayA * 12;
+    System.out.println(annualPay);
+    
+  }
+}
+
+      
